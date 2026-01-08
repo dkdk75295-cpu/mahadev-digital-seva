@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<title> Mahadev Janseva Kendra | Online Services</title>
+
+<!-- SEO -->
+<meta name="description" content="Janseva Kendra - Aadhaar, PAN, Certificate, Bill Payment, Online Services">
+<meta name="keywords" content="Janseva Kendra, CSC Center, Aadhaar, PAN, Online Form">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background:#f2f5f9;
+}
+header{
+    background:linear-gradient(135deg,#0a5c9e,#1287e0);
+    color:white;
+    padding:40px 20px;
+    text-align:center;
+}
+header img{
+    width:110px;
+    border-radius:50%;
+    margin-bottom:10px;
+}
+section{
+    background:white;
+    margin:20px;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+h2{
+    color:#0a5c9e;
+    margin-bottom:15px;
+}
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
+}
+.service-box{
+    background:#f7faff;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    font-weight:500;
+}
+input, select, textarea{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+button{
+    background:#0a5c9e;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-top:12px;
+    width:100%;
+    font-size:16px;
+}
+button:hover{
+    background:#084b82;
+}
+footer{
+    background:#0a5c9e;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+.preview{
+    max-width:200px;
+    margin-top:10px;
+    border-radius:10px;
+}
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:12px 18px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="Janseva Kendra Logo">
+    <h1>Mahadev Janseva Kendra</h1>
+    <p>आपकी सेवा, हमारी प्राथमिकता</p>
+</header>
+
+<section>
+<h2>हमारी सेवाएं</h2>
+<div class="services">
+<div class="service-box">आधार कार्ड सेवाएं</div>
+<div class="service-box">पैन कार्ड आवेदन</div>
+<div class="service-box">जाति / आय / निवास प्रमाण पत्र</div>
+<div class="service-box">बिजली / पानी बिल भुगतान</div>
+<div class="service-box">रेलवे / बस टिकट</div>
+<div class="service-box">सभी ऑनलाइन फॉर्म</div>
+</div>
+</section>
+
+<section>
+<h2>ऑनलाइन सेवा अनुरोध</h2>
+<form>
+<input type="text" placeholder="पूरा नाम" required>
+<input type="tel" placeholder="मोबाइल नंबर" required>
+<select required>
+<option value="">सेवा चुनें</option>
+<option>आधार</option>
+<option>पैन</option>
+<option>प्रमाण पत्र</option>
+<option>बिल भुगतान</option>
+<option>अन्य</option>
+</select>
+<textarea placeholder="संदेश लिखें"></textarea>
+<input type="file" accept="image/*" onchange="previewImage(event)">
+<img id="preview" class="preview">
+<button type="submit">Submit Request</button>
+</form>
+</section>
+
+<section>
+<h2>हमारा पता</h2>
+<p>
+📍 पता: Bilsad Patti Aliganj Etah<br>
+📞 मोबाइल: 9639181317<br>
+📧 ईमेल: jansevakendra@gmail.com
+</p>
+<iframe 
+src="https://www.google.com/maps?q=Etah%20UP&output=embed"
+width="100%" height="250" style="border:0;border-radius:10px;" allowfullscreen>
+</iframe>
+</section>
+
+<footer>
+© 2026 Janseva Kendra | All Rights Reserved
+</footer>
+
+<a class="whatsapp" href="https://wa.me/9639181317" target="_blank">
+WhatsApp
+</a>
+
+<script>
+function previewImage(event){
+    document.getElementById("preview").src =
+    URL.createObjectURL(event.target.files[0]);
+}
+</script>
+
+</body>
+</html>
